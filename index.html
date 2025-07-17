@@ -22,26 +22,29 @@
     <!-- Navigasi -->
     <nav
         class="text-[#FFFFF0] flex justify-between px-[5%] md:px-[10%] backdrop-blur-sm xl:px-[20%] py-4 items-center h-20 fixed w-full bg-linear-to-b from-[#17262b] to-transparent z-50">
-        <a href="#"><img src="assets/Typography Invis White.png" class="h-28" alt=""></a>
+        <a href="#"><img src="assets/Typography Invis White.png" class="h-28" alt="Tarulab"></a>
         <ul class="hidden md:flex gap-5 items-center">
-            <li><a href="">Blog</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Project</a></li>
-            <li><a href="">Team</a></li>
-            <li><a href=""
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#"
                     class="flex px-5 py-2 rounded-full border bg-[#2B2B35] shadow-lg shadow-[#00000F00] hover:shadow-[#00000F50]">Get
                     Started</a></li>
         </ul>
-        <div class="md:hidden"><i class='bx  bx-menu-wider text-4xl p-2 border rounded'></i></div>
+        <div class="md:hidden relative size-16" id="open-menu">
+            <i class='bx bx-menu-wider opacity-100 text-4xl p-2 border rounded absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 cursor-pointer'></i>
+            <i class="bx bx-x text-4xl opacity-0 p-2 border rounded absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 cursor-pointer"></i>
+        </div>
     </nav>
     <!-- Sidebar -->
-    <aside class="fixed right-0 top-20 w-full h-[calc(100vh-75px)] z-50 md:hidden bg-red-500">
+    <aside class="fixed right-full top-20 w-full h-[calc(100vh-75px)] z-50 md:hidden bg-red-500">
         <ul class="flex flex-col">
-            <li class="flex "><a href="" class="w-full p-2 px-4 text-3xl flex items-center justify-between">Blog<box-icon name='chevron-right' color='#fffff0' ></box-icon></a></li>
-            <li class="flex "><a href="" class="w-full p-2 px-4 text-3xl flex items-center justify-between">About<box-icon name='chevron-right' color='#fffff0' ></box-icon></a></li>
-            <li class="flex "><a href="" class="w-full p-2 px-4 text-3xl flex items-center justify-between">Project<box-icon name='chevron-right' color='#fffff0' ></box-icon></a></li>
-            <li class="flex "><a href="" class="w-full p-2 px-4 text-3xl flex items-center justify-between">Team<box-icon name='chevron-right' color='#fffff0' ></box-icon></a></li>
-            <li class="flex "><a href="" class="w-full p-2 px-4 text-3xl flex items-center justify-between">Get Started<box-icon name='chevron-right' color='#fffff0' ></box-icon></a></li>
+            <li class="flex "><a href="#" class="w-full p-2 px-4 text-3xl flex items-center justify-between">Blog<box-icon name='chevron-right' color='#fffff0' ></box-icon></a></li>
+            <li class="flex "><a href="#" class="w-full p-2 px-4 text-3xl flex items-center justify-between">About<box-icon name='chevron-right' color='#fffff0' ></box-icon></a></li>
+            <li class="flex "><a href="#" class="w-full p-2 px-4 text-3xl flex items-center justify-between">Project<box-icon name='chevron-right' color='#fffff0' ></box-icon></a></li>
+            <li class="flex "><a href="#" class="w-full p-2 px-4 text-3xl flex items-center justify-between">Team<box-icon name='chevron-right' color='#fffff0' ></box-icon></a></li>
+            <li class="flex "><a href="#" class="w-full p-2 px-4 text-3xl flex items-center justify-between">Get Started<box-icon name='chevron-right' color='#fffff0' ></box-icon></a></li>
         </ul>
     </aside>
     <!-- Home Section -->
@@ -123,6 +126,9 @@
             </div>
         </div>
     </section>
+    <!-- Script -->
+    <script src="src/js/script.js"></script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
