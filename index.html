@@ -18,7 +18,7 @@
 
 </head>
 
-<body class="font-[Josefin_Sans] text-lg bg-[#13495A] ">
+<body class="font-[Josefin_Sans] text-lg bg-[#fffff0] ">
     <!-- Navigasi -->
     <nav
         class="text-[#FFFFF0] flex justify-center md:justify-between px-[5%] md:px-[10%] backdrop-blur-sm xl:px-[20%] py-4 items-center h-20 fixed w-full bg-linear-to-b from-[#17262b] to-transparent z-50">
@@ -33,27 +33,59 @@
                     Started</a></li>
         </ul>
     </nav>
-    <div class="rounded-full size-12 fixed left-1/2 md:hidden flex z-50 bottom-5 items-center justify-center -translate-x-1/2 bg-[#13495A] border-2 border-[#fffff0]"><box-icon color="#fffff0" name='plus' class="size-9" ></box-icon></div>
     <!-- Button Bar -->
-    
+    <div id="openOrClose" class="rounded-full size-12 fixed left-1/2 md:hidden flex z-50 bottom-5 items-center justify-center -translate-x-1/2 bg-[#13495A] border-2 border-[#fffff0]"><box-icon color="#fffff0" name='plus' class="size-9" ></box-icon></div>
+
+    <div id="buttonBar" class="duration-700 left-1/2 backdrop-blur-sm -translate-x-1/2 w-full gap-4 top-full z-40 md:hidden block md:justify-between p-4 items-center fixed h-screen">
+        <ul class="flex flex-col gap-4 w-full">
+            <li><a href="#blog" class="bg-[#fffff0] border-8 border-[#13495a] font-semibold text-[#13495a] w-full flex h-5 px-4 py-6 rounded-3xl items-center justify-center">Blog</a></li>
+            <li><a href="#wwd" class="bg-[#fffff0] border-8 border-[#13495a] font-semibold text-[#13495a] w-full flex h-5 px-4 py-6 rounded-3xl items-center justify-center">Services</a></li>
+            <li><a href="#recent" class="bg-[#fffff0] border-8 border-[#13495a] font-semibold text-[#13495a] w-full flex h-5 px-4 py-6 rounded-3xl items-center justify-center">Portfolio</a></li>
+            <li><a href="#" class="bg-[#fffff0] border-8 border-[#13495a] font-semibold text-[#13495a] w-full flex h-5 px-4 py-6 rounded-3xl items-center justify-center">Team</a></li>
+            <li><a href="#" class="bg-[#2b2b35] border-8 border-[#fffff0] font-semibold text-[#fffff0] w-full flex h-5 px-4 py-6 rounded-3xl items-center justify-center">Get Started</a></li>
+        </ul>
+    </div>
     <!-- Home Section -->
-    <section
-        class="text-[#FFFFF0] h-screen flex md:justify-between px-[5%] md:px-[10%] xl:px-[20%] py-4 items-center flex-wrap-reverse">
+    <section class="text-[#FFFFF0] bg-[#13495A] h-[calc(100vh-68px)] md:h-screen flex md:justify-between px-[5%] md:px-[10%] xl:px-[20%] py-4 items-center flex-wrap-reverse">
         <div class="md:max-w-1/2 z-10">
             <h1 class="text-6xl font-extrabold text-shadow-[#000]">Your Complaint, Our Expertise</h1>
             <p>Entertainment, Tech, Graphic Design, Devices Troubleshooting, and Website Developing</p>
         </div>
-        <div class="md:max-w-1/2 absolute md:static left-0 z-0">
+        <div class="md:max-w-1/2 absolute md:relative left-0 z-0">
             <img src="assets/komputer-ilustrasi.png" class="opacity-50 md:opacity-100 w-full" alt="">
         </div>
-        <a href="#wwd"><i
-                class='bx  bx-chevron-down absolute bottom-2 left-1/2 text-6xl -translate-x-1/2 z-10 duration-150 sm:text-[#2B2B35]'></i></a>
+        <a href="#blog"><i
+                class='bx bx-chevron-down absolute bottom-2 left-1/2 text-6xl -translate-x-1/2 z-10 duration-150 sm:text-[#2B2B35]'></i></a>
         <div class="absolute -bottom-1 left-0 w-full overflow-hidden leading-[0] rotate-180">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                 preserveAspectRatio="none" class="relative block w-[calc(100%+1.3px)] h-[124]">
                 <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="fill-[#fffff0]"></path>
             </svg>
         </div>
+    </section>
+    <!-- Blog -->
+    <section id="blog" class="bg-[#fffff0] text-[#00000f] px-[5%] md:px-[10%] xl:px-[20%] py-4 pb-10">
+        <h1 class="text-4xl mt-20 mb-10 text-center font-bold">What's New ?</h1>
+        <div class="flex flex-wrap gap-4 justify-center">
+            <a href="#" class="min-w-64 max-w-72" title="One Piece memasuki Arc Egghead ?">
+                <img src="assets/blog/onepiece.jpeg" class="rounded mb-2 aspect-video" alt="">
+                <div>
+                    <h1 class="leading-5">One Piece memasuki Arc Egghead ?</h1>
+                    <p class="underline text-blue-500">Selengkapnya...</p>
+                </div>
+                <div class="h-[0.5px] bg-[#00000f40] my-2"></div>
+            </a>
+            <a href="#" class="min-w-64 max-w-72" title="Kimetsu no Yaiba: Infinity Castle rilis 15 Agustus 2025">
+                <img src="assets/blog/kny.jpg" class="rounded mb-2 aspect-video" alt="">
+                <div>
+                    <h1 class="leading-5">Kimetsu no Yaiba: Infinity Castle rilis 15 Agustus 2025</h1>
+                    <p class="underline text-blue-500">Selengkapnya...</p>
+                </div>
+                <div class="h-[0.5px] bg-[#00000f40] my-2"></div>
+            </a>
+
+        </div>
+    </div>
     </section>
     <!-- What We Can ? -->
     <section class="bg-[#fffff0] text-[#00000f] px-[5%] md:px-[10%] xl:px-[20%] py-4 pb-10" id="wwd">
@@ -94,31 +126,8 @@
             </a>
         </div>
     </section>
-    <section id="blog" class="bg-[#fffff0] text-[#00000f] px-[5%] md:px-[10%] xl:px-[20%] py-4 pb-10">
-        <h1 class="text-4xl mt-20 mb-10 text-center font-bold">What's New ?</h1>
-        <div class="flex flex-wrap gap-4 justify-center">
-            <a href="#" class="min-w-64 max-w-72" title="One Piece memasuki Arc Egghead ?">
-                <img src="assets/blog/onepiece.jpeg" class="rounded mb-2 aspect-video" alt="">
-                <div>
-                    <h1 class="leading-5">One Piece memasuki Arc Egghead ?</h1>
-                    <p class="underline text-blue-500">Selengkapnya...</p>
-                </div>
-                <div class="h-[0.5px] bg-[#00000f40] my-2"></div>
-            </a>
-            <a href="#" class="min-w-64 max-w-72" title="Kimetsu no Yaiba: Infinity Castle rilis 15 Agustus 2025">
-                <img src="assets/blog/kny.jpg" class="rounded mb-2 aspect-video" alt="">
-                <div>
-                    <h1 class="leading-5">Kimetsu no Yaiba: Infinity Castle rilis 15 Agustus 2025</h1>
-                    <p class="underline text-blue-500">Selengkapnya...</p>
-                </div>
-                <div class="h-[0.5px] bg-[#00000f40] my-2"></div>
-            </a>
-
-        </div>
-    </div>
-    </section>
     <!-- Recent -->
-    <section id="wdn" class="bg-[#fffff0] text-[#00000f] px-[5%] md:px-[10%] xl:px-[20%] py-4 pb-10">
+    <section id="recent" class="bg-[#fffff0] text-[#00000f] px-[5%] md:px-[10%] xl:px-[20%] py-4 pb-10">
         <h1 class="text-4xl mt-20 mb-10 text-center font-bold">Recent Project</h1>
         <div class="justify-between flex flex-wrap gap-4">
             <div>
@@ -140,7 +149,7 @@
             <p class="flex items-center gap-2"><span class="text-2xl">&copy;</span> All rights reserved.</p>
             <div class="flex gap-2">
                 <a href="" class="flex items-center justify-center"><box-icon type='logo' name='instagram-alt' color="#fffff0"></box-icon></a>
-                <a href="" class="flex items-center justify-center"><box-icon type='logo' name='instagram-alt' color="#fffff0"></box-icon></a>
+                <a href="" class="flex items-center justify-center"><box-icon type='logo' name='facebook-square' color="#fffff0"></box-icon></a>
             </div>
         </div>
         <div class="flex gap-8 flex-wrap">
@@ -153,11 +162,12 @@
                 </div>
             </div>
             <div>
-                <h1 class="text-2xl font-bold">About</h1>
+                <h1 class="text-2xl font-bold">Learn More</h1>
                 <div class="flex flex-col">
-                    <p>Jl. Makmur, Dusun 6 Kenanga</p>
-                    <a href="">tarutaru.lab@gmail.com</a>
-                    <a href="wa.me/6285762647933">+62 857-6264-7933</a>
+                    <a href="">Blog</a>
+                    <a href="">Services</a>
+                    <a href="">Portfolio</a>
+                    <a href="">Team</a>
                 </div>
             </div>
         </div>
