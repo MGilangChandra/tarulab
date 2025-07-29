@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
-    <link rel="icon" href="assets/Tarulab Logo Final.png">
+    <link rel="icon" href="assets/logo/Tarulab-Invis-Logo.png">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
@@ -21,32 +21,21 @@
 <body class="font-[Josefin_Sans] text-lg bg-[#13495A] ">
     <!-- Navigasi -->
     <nav
-        class="text-[#FFFFF0] flex justify-between px-[5%] md:px-[10%] backdrop-blur-sm xl:px-[20%] py-4 items-center h-20 fixed w-full bg-linear-to-b from-[#17262b] to-transparent z-50">
-        <a href="#"><img src="assets/Typography Invis White.png" class="h-28" alt="Tarulab"></a>
+        class="text-[#FFFFF0] flex justify-center md:justify-between px-[5%] md:px-[10%] backdrop-blur-sm xl:px-[20%] py-4 items-center h-20 fixed w-full bg-linear-to-b from-[#17262b] to-transparent z-50">
+        <a href="#"><img src="assets/logo/Typography Invis White.png" class="h-28" alt="Tarulab"></a>
         <ul class="hidden md:flex gap-5 items-center">
             <li><a href="#">Blog</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Project</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
             <li><a href="#">Team</a></li>
             <li><a href="#"
-                    class="flex px-5 py-2 rounded-full border bg-[#2B2B35] shadow-lg shadow-[#00000F00] hover:shadow-[#00000F50]">Get
+                    class="flex px-5 py-2 rounded-full border bg-[#2B2B35]">Get
                     Started</a></li>
         </ul>
-        <div class="md:hidden relative size-16" id="open-menu">
-            <i class='bx bx-menu-wider opacity-100 text-4xl p-2 border rounded absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 cursor-pointer'></i>
-            <i class="bx bx-x text-4xl opacity-0 p-2 border rounded absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 cursor-pointer"></i>
-        </div>
     </nav>
-    <!-- Sidebar -->
-    <aside class="fixed right-full top-20 w-full h-[calc(100vh-75px)] z-50 md:hidden bg-red-500">
-        <ul class="flex flex-col">
-            <li class="flex "><a href="#" class="w-full p-2 px-4 text-3xl flex items-center justify-between">Blog<box-icon name='chevron-right' color='#fffff0' ></box-icon></a></li>
-            <li class="flex "><a href="#" class="w-full p-2 px-4 text-3xl flex items-center justify-between">About<box-icon name='chevron-right' color='#fffff0' ></box-icon></a></li>
-            <li class="flex "><a href="#" class="w-full p-2 px-4 text-3xl flex items-center justify-between">Project<box-icon name='chevron-right' color='#fffff0' ></box-icon></a></li>
-            <li class="flex "><a href="#" class="w-full p-2 px-4 text-3xl flex items-center justify-between">Team<box-icon name='chevron-right' color='#fffff0' ></box-icon></a></li>
-            <li class="flex "><a href="#" class="w-full p-2 px-4 text-3xl flex items-center justify-between">Get Started<box-icon name='chevron-right' color='#fffff0' ></box-icon></a></li>
-        </ul>
-    </aside>
+    <div class="rounded-full size-12 fixed left-1/2 md:hidden flex z-50 bottom-5 items-center justify-center -translate-x-1/2 bg-[#13495A] border-2 border-[#fffff0]"><box-icon color="#fffff0" name='plus' class="size-9" ></box-icon></div>
+    <!-- Button Bar -->
+    
     <!-- Home Section -->
     <section
         class="text-[#FFFFF0] h-screen flex md:justify-between px-[5%] md:px-[10%] xl:px-[20%] py-4 items-center flex-wrap-reverse">
@@ -68,7 +57,7 @@
     </section>
     <!-- What We Can ? -->
     <section class="bg-[#fffff0] text-[#00000f] px-[5%] md:px-[10%] xl:px-[20%] py-4 pb-10" id="wwd">
-        <h1 class="text-4xl my-10 text-center">What We Do ?</h1>
+        <h1 class="text-4xl mt-20 mb-10 text-center font-bold">What We Do ?</h1>
         <div class="flex flex-wrap gap-4 justify-center">
             <div data-aos="zoom-in" data-aos-duration="700"
                 class="overflow-hidden opacity-75 hover:opacity-100 duration-300 bg-[#fffff0] flex-grow min-w-64 max-w-72 min-h-80 rounded-xl border-4 border-[#13495A50]">
@@ -92,8 +81,8 @@
                     explicabo quasi repellendus minus nam?</p>
             </div>
         </div>
-        <div class="my-10 flex justify-center ">
-            <a href=""
+        <div class="mt-10 flex justify-center ">
+            <a href="pages/what-we-can/"
                 class="flex justify-center gap-2 items-center mx-auto shadow-xl text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-emerald-500 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-4 py-2 overflow-hidden border-2 rounded-full group">
                 Explore More...
                 <svg class="w-8 h-8 justify-end group-hover:rotate-90 group-hover:bg-gray-50 text-gray-50 ease-linear duration-300 rounded-full border border-gray-700 p-2 rotate-45"
@@ -104,33 +93,76 @@
                 </svg>
             </a>
         </div>
-        <!-- Contact -->
-        <div class="flex flex-col gap-3 p-4 bg-[#13495A] rounded-3xl text-[#fffff0]" id="interest">
-            <div class="flex items-center gap-4 leading-3">
-                <h2 class="text-3xl">Interesting ? Contact Us</h2>
+    </section>
+    <section id="blog" class="bg-[#fffff0] text-[#00000f] px-[5%] md:px-[10%] xl:px-[20%] py-4 pb-10">
+        <h1 class="text-4xl mt-20 mb-10 text-center font-bold">What's New ?</h1>
+        <div class="flex flex-wrap gap-4 justify-center">
+            <a href="#" class="min-w-64 max-w-72" title="One Piece memasuki Arc Egghead ?">
+                <img src="assets/blog/onepiece.jpeg" class="rounded mb-2 aspect-video" alt="">
+                <div>
+                    <h1 class="leading-5">One Piece memasuki Arc Egghead ?</h1>
+                    <p class="underline text-blue-500">Selengkapnya...</p>
+                </div>
+                <div class="h-[0.5px] bg-[#00000f40] my-2"></div>
+            </a>
+            <a href="#" class="min-w-64 max-w-72" title="Kimetsu no Yaiba: Infinity Castle rilis 15 Agustus 2025">
+                <img src="assets/blog/kny.jpg" class="rounded mb-2 aspect-video" alt="">
+                <div>
+                    <h1 class="leading-5">Kimetsu no Yaiba: Infinity Castle rilis 15 Agustus 2025</h1>
+                    <p class="underline text-blue-500">Selengkapnya...</p>
+                </div>
+                <div class="h-[0.5px] bg-[#00000f40] my-2"></div>
+            </a>
+
+        </div>
+    </div>
+    </section>
+    <!-- Recent -->
+    <section id="wdn" class="bg-[#fffff0] text-[#00000f] px-[5%] md:px-[10%] xl:px-[20%] py-4 pb-10">
+        <h1 class="text-4xl mt-20 mb-10 text-center font-bold">Recent Project</h1>
+        <div class="justify-between flex flex-wrap gap-4">
+            <div>
+                <h2 class="text-3xl font-semibold">Epitaph Series</h2>
+                <p class="text-md leading-5">Seorang gadis yang mengidap gangguan bipolar dan skizofrenia menjalani kehidupan yang dipenuhi rasa sakit mendalam. Ia hidup dalam lingkungan yang jauh dari sempurna. Penderitaan datang dari segala penjuru—baik dari yang terjauh hingga yang terdekat. <a href="#" class="underline text-blue-500">Selengkapnya...</a></p>
             </div>
-            <div class="block">
-                <div class="flex gap-2 items-center">
-                    <box-icon type='logo' name='instagram' color="#fffff0"></box-icon>
-                    <div class="flex items-center justify-between w-full">
-                        <p>@taru.lab_official</p>
-                        <a href="https://www.instagram.com/taru.lab_official/" class="flex items-center hover:translate-x-1 duration-300"><box-icon name='right-arrow-alt' color='#fffff0' ></box-icon></a>
-                    </div>
-                </div>
-                <div class="flex gap-2 items-center">
-                    <box-icon name='phone' color="#fffff0"></box-icon>
-                    <div class="flex items-center justify-between w-full">
-                        <p>+62 812-3456-7890</p>
-                        <a href="" class="flex items-center hover:translate-x-1 duration-300"><box-icon name='right-arrow-alt' color='#fffff0' ></box-icon></a>
-                    </div>
-                </div>
+            <div class="max-w-96 rounded-xl overflow-hidden border aspect-video flex items-center justify-center ">
+                <img src="assets/unavailable.png" class="hover:scale-125 duration-150" alt="">
             </div>
         </div>
     </section>
     <!-- Footer -->
-    <div class="bg-[#fffff0] p-4 border-t border-t-[#00000f65]">
-
+    <div class="relative bg-[#13495A] text-[#fffff0] px-[5%] md:px-[10%] xl:px-[20%] py-16 pb-10 flex gap-8 justify-between flex-wrap">
+        <!-- <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#00000f50] to-transparent"></div> -->
+        <div class="relative flex flex-col">
+            <div class="flex items-center justify-start">
+                <a href="" class=""><img src="assets/logo/Typography Invis White.png" class="h-16 rounded-xl scale-125" alt=""></a>
+            </div>
+            <p class="flex items-center gap-2"><span class="text-2xl">&copy;</span> All rights reserved.</p>
+            <div class="flex gap-2">
+                <a href="" class="flex items-center justify-center"><box-icon type='logo' name='instagram-alt' color="#fffff0"></box-icon></a>
+                <a href="" class="flex items-center justify-center"><box-icon type='logo' name='instagram-alt' color="#fffff0"></box-icon></a>
+            </div>
+        </div>
+        <div class="flex gap-8 flex-wrap">
+            <div>
+                <h1 class="text-2xl font-bold">About</h1>
+                <div class="flex flex-col">
+                    <p>Jl. Makmur, Dusun 6 Kenanga</p>
+                    <a href="">tarutaru.lab@gmail.com</a>
+                    <a href="wa.me/6285762647933">+62 857-6264-7933</a>
+                </div>
+            </div>
+            <div>
+                <h1 class="text-2xl font-bold">About</h1>
+                <div class="flex flex-col">
+                    <p>Jl. Makmur, Dusun 6 Kenanga</p>
+                    <a href="">tarutaru.lab@gmail.com</a>
+                    <a href="wa.me/6285762647933">+62 857-6264-7933</a>
+                </div>
+            </div>
+        </div>
     </div>
+
     <!-- Script -->
     <script src="src/js/script.js"></script>
 
