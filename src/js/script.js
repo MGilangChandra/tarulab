@@ -27,7 +27,6 @@ toggleBtn.addEventListener('click', () => {
     }
 });
 
-// Tutup menu saat link diklik
 links.forEach(link => {
     link.addEventListener('click', closeMenu);
 });
